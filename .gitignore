@@ -33,3 +33,7 @@ rtin_wkt_parse.h
 rttopo_config.h
 rttopo_config.h.in
 !/docker/**/Makefile
+# externpro
+.env
+_bld*/
+docker-compose.override.yml
