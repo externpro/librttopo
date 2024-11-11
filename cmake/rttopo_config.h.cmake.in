@@ -1,167 +1,169 @@
+/* @CONFIG_H_COMMENT@ */
+/* cmake/rttopo_config.h.cmake.in. Copied, modified from src/rttopo_config.h.in, manually maintained. */
 /* src/rttopo_config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define to 1 if you have the <assert.h> header file. */
-#undef HAVE_ASSERT_H
+#@DEFINE_HAVE_ASSERT_H@ HAVE_ASSERT_H
 
 /* Define to 1 if you have the <ctype.h> header file. */
-#undef HAVE_CTYPE_H
+#@DEFINE_HAVE_CTYPE_H@ HAVE_CTYPE_H
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-#undef HAVE_DLFCN_H
+#@DEFINE_HAVE_DLFCN_H@ HAVE_DLFCN_H
 
 /* Define to 1 if you have the <errno.h> header file. */
-#undef HAVE_ERRNO_H
+#@DEFINE_HAVE_ERRNO_H@ HAVE_ERRNO_H
 
 /* Define to 1 if you have the `fdatasync' function. */
-#undef HAVE_FDATASYNC
+#@DEFINE_HAVE_FDATASYNC@ HAVE_FDATASYNC
 
 /* Define to 1 if you have the <float.h> header file. */
-#undef HAVE_FLOAT_H
+#@DEFINE_HAVE_FLOAT_H@ HAVE_FLOAT_H
 
 /* Define to 1 if you have the `ftruncate' function. */
-#undef HAVE_FTRUNCATE
+#@DEFINE_HAVE_FTRUNCATE@ HAVE_FTRUNCATE
 
 /* Define to 1 if you have the <geos_c.h> header file. */
-#undef HAVE_GEOS_C_H
+#@DEFINE_HAVE_GEOS_C_H@ HAVE_GEOS_C_H
 
 /* Define to 1 if you have the `getcwd' function. */
-#undef HAVE_GETCWD
+#@DEFINE_HAVE_GETCWD@ HAVE_GETCWD
 
 /* Define to 1 if you have the `gettimeofday' function. */
-#undef HAVE_GETTIMEOFDAY
+#@DEFINE_HAVE_GETTIMEOFDAY@ HAVE_GETTIMEOFDAY
 
 /* Define to 1 if you have the <inttypes.h> header file. */
-#undef HAVE_INTTYPES_H
+#@DEFINE_HAVE_INTTYPES_H@ HAVE_INTTYPES_H
 
 /* Define to 1 if you have the `localtime_r' function. */
-#undef HAVE_LOCALTIME_R
+#@DEFINE_HAVE_LOCALTIME_R@ HAVE_LOCALTIME_R
 
 /* Define to 1 if `lstat' has the bug that it succeeds when given the
    zero-length file name argument. */
-#undef HAVE_LSTAT_EMPTY_STRING_BUG
+#@DEFINE_HAVE_LSTAT_EMPTY_STRING_BUG@ HAVE_LSTAT_EMPTY_STRING_BUG
 
 /* Define to 1 if you have the <math.h> header file. */
-#undef HAVE_MATH_H
+#@DEFINE_HAVE_MATH_H@ HAVE_MATH_H
 
 /* Define to 1 if you have the `memmove' function. */
-#undef HAVE_MEMMOVE
+#@DEFINE_HAVE_MEMMOVE@ HAVE_MEMMOVE
 
 /* Define to 1 if you have the <memory.h> header file. */
-#undef HAVE_MEMORY_H
+#@DEFINE_HAVE_MEMORY_H@ HAVE_MEMORY_H
 
 /* Define to 1 if you have the `memset' function. */
-#undef HAVE_MEMSET
+#@DEFINE_HAVE_MEMSET@ HAVE_MEMSET
 
 /* Define to 1 if you have the `sqrt' function. */
-#undef HAVE_SQRT
+#@DEFINE_HAVE_SQRT@ HAVE_SQRT
 
 /* Define to 1 if `stat' has the bug that it succeeds when given the
    zero-length file name argument. */
-#undef HAVE_STAT_EMPTY_STRING_BUG
+#@DEFINE_HAVE_STAT_EMPTY_STRING_BUG@ HAVE_STAT_EMPTY_STRING_BUG
 
 /* Define to 1 if you have the <stdarg.h> header file. */
-#undef HAVE_STDARG_H
+#@DEFINE_HAVE_STDARG_H@ HAVE_STDARG_H
 
 /* Define to 1 if you have the <stdint.h> header file. */
-#undef HAVE_STDINT_H
+#@DEFINE_HAVE_STDINT_H@ HAVE_STDINT_H
 
 /* Define to 1 if you have the <stdio.h> header file. */
-#undef HAVE_STDIO_H
+#@DEFINE_HAVE_STDIO_H@ HAVE_STDIO_H
 
 /* Define to 1 if you have the <stdlib.h> header file. */
-#undef HAVE_STDLIB_H
+#@DEFINE_HAVE_STDLIB_H@ HAVE_STDLIB_H
 
 /* Define to 1 if you have the `strcasecmp' function. */
-#undef HAVE_STRCASECMP
+#@DEFINE_HAVE_STRCASECMP@ HAVE_STRCASECMP
 
 /* Define to 1 if you have the `strerror' function. */
-#undef HAVE_STRERROR
+#@DEFINE_HAVE_STRERROR@ HAVE_STRERROR
 
 /* Define to 1 if you have the `strftime' function. */
-#undef HAVE_STRFTIME
+#@DEFINE_HAVE_STRFTIME@ HAVE_STRFTIME
 
 /* Define to 1 if you have the <strings.h> header file. */
-#undef HAVE_STRINGS_H
+#@DEFINE_HAVE_STRINGS_H@ HAVE_STRINGS_H
 
 /* Define to 1 if you have the <string.h> header file. */
-#undef HAVE_STRING_H
+#@DEFINE_HAVE_STRING_H@ HAVE_STRING_H
 
 /* Define to 1 if you have the `strncasecmp' function. */
-#undef HAVE_STRNCASECMP
+#@DEFINE_HAVE_STRNCASECMP@ HAVE_STRNCASECMP
 
 /* Define to 1 if you have the `strstr' function. */
-#undef HAVE_STRSTR
+#@DEFINE_HAVE_STRSTR@ HAVE_STRSTR
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
-#undef HAVE_SYS_STAT_H
+#@DEFINE_HAVE_SYS_STAT_H@ HAVE_SYS_STAT_H
 
 /* Define to 1 if you have the <sys/types.h> header file. */
-#undef HAVE_SYS_TYPES_H
+#@DEFINE_HAVE_SYS_TYPES_H@ HAVE_SYS_TYPES_H
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#undef HAVE_UNISTD_H
+#@DEFINE_HAVE_UNISTD_H@ HAVE_UNISTD_H
 
 /* rtgeom version */
-#undef LIBRTGEOM_VERSION
+#cmakedefine LIBRTGEOM_VERSION "@LIBRTGEOM_VERSION@"
 
 /* Define to 1 if `lstat' dereferences a symlink specified with a trailing
    slash. */
-#undef LSTAT_FOLLOWS_SLASHED_SYMLINK
+#@DEFINE_LSTAT_FOLLOWS_SLASHED_SYMLINK@ LSTAT_FOLLOWS_SLASHED_SYMLINK
 
 /* Define to the sub-directory where libtool stores uninstalled libraries. */
-#undef LT_OBJDIR
+#cmakedefine LT_OBJDIR "@LT_OBJDIR@"
 
 /* Must be defined in order to disable debug mode. */
-#undef NDEBUG
+#cmakedefine NDEBUG @NDEBUG@
 
 /* Name of package */
-#undef PACKAGE
+#cmakedefine PACKAGE "@PACKAGE@"
 
 /* Define to the address where bug reports for this package should be sent. */
-#undef PACKAGE_BUGREPORT
+#cmakedefine PACKAGE_BUGREPORT "@PACKAGE_BUGREPORT@"
 
 /* Define to the full name of this package. */
-#undef PACKAGE_NAME
+#cmakedefine PACKAGE_NAME "@PACKAGE_NAME@"
 
 /* Define to the full name and version of this package. */
-#undef PACKAGE_STRING
+#cmakedefine PACKAGE_STRING "@PACKAGE_STRING@"
 
 /* Define to the one symbol short name of this package. */
-#undef PACKAGE_TARNAME
+#cmakedefine PACKAGE_TARNAME "@PACKAGE_TARNAME@"
 
 /* Define to the home page for this package. */
-#undef PACKAGE_URL
+#cmakedefine PACKAGE_URL "@PACKAGE_URL@"
 
 /* Define to the version of this package. */
-#undef PACKAGE_VERSION
+#cmakedefine PACKAGE_VERSION "@PACKAGE_VERSION@"
 
 /* RTGEOM Debug level */
-#undef RTGEOM_DEBUG_LEVEL
+#define RTGEOM_DEBUG_LEVEL @RTGEOM_DEBUG_LEVEL@
 
 /* GEOS library version */
-#undef RTGEOM_GEOS_VERSION
+#cmakedefine RTGEOM_GEOS_VERSION @RTGEOM_GEOS_VERSION@
 
 /* Define to 1 if you have the ANSI C header files. */
-#undef STDC_HEADERS
+#@DEFINE_STDC_HEADERS@ STDC_HEADERS
 
 /* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
-#undef TIME_WITH_SYS_TIME
+#@DEFINE_TIME_WITH_SYS_TIME@ TIME_WITH_SYS_TIME
 
 /* Define to 1 if your <sys/time.h> declares `struct tm'. */
-#undef TM_IN_SYS_TIME
+#@DEFINE_TM_IN_SYS_TIME@ TM_IN_SYS_TIME
 
 /* Version number of package */
-#undef VERSION
+#cmakedefine VERSION "@VERSION@"
 
 /* Define to empty if `const' does not conform to ANSI C. */
-#undef const
+#cmakedefine const @const@
 
 /* Define to `long int' if <sys/types.h> does not define. */
-#undef off_t
+#cmakedefine off_t @off_t@
 
 /* Define to `unsigned int' if <sys/types.h> does not define. */
-#undef size_t
+#cmakedefine size_t @size_t@
 
 /* Define to empty if the keyword `volatile' does not work. Warning: valid
    code using `volatile' can become incorrect without. Disable with care. */
-#undef volatile
+#cmakedefine volatile @volatile@
