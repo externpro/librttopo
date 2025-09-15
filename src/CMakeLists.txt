@@ -86,7 +86,10 @@ source_group(headers FILES ${headers_srcs})
 list(APPEND ${lib_name}_libsrcs ${headers_srcs})
 ########################################
 add_library(${lib_name} STATIC ${${lib_name}_libsrcs})
-target_include_directories(${lib_name} PUBLIC $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}/cmake> $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/headers> $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+target_include_directories(${lib_name} PUBLIC $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}/cmake>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/headers>
+  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
+  )
 target_link_libraries(${lib_name} PUBLIC xpro::geos_c)
 set_target_properties(${lib_name} PROPERTIES
   PREFIX "" # strip off the "lib" prefix, since it's already libspatialite
