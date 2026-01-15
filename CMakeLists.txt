@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.31)
 set(CMAKE_PROJECT_TOP_LEVEL_INCLUDES .devcontainer/cmake/xproinc.cmake)
 project(librttopo VERSION 1.1.0)
-include(xpflags)
-include(GNUInstallDirs)
 option(BUILD_AUTOMAKE "build with automake" OFF)
 if(BUILD_AUTOMAKE)
   # ./docker-compose.sh
@@ -19,7 +17,7 @@ if(BUILD_AUTOMAKE)
     INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_if_different <SOURCE_DIR>/src/rttopo_config.h.in <SOURCE_DIR>/cmake/
     )
 else()
-  xpFindPkg(PKGS geos)
+  find_package(geos)
   include(cmake/configure.cmake)
   add_subdirectory(src)
 endif()
