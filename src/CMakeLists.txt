@@ -102,7 +102,7 @@ if(DEFINED XP_NAMESPACE)
     BASE ${CMAKE_PROJECT_NAME}-${CMAKE_PROJECT_VERSION} XPDIFF "auto" DEPS geos
     WEB "https://git.osgeo.org/gitea/rttopo/librttopo" UPSTREAM "github.com/CGX-GROUP/librttopo"
     DESC "RT Topology Library exposes an API to create and manage standard topologies using user-provided data stores"
-    LICENSE "[GPL-2.0](https://github.com/CGX-GROUP/librttopo/blob/master/COPYING 'GNU General Public License v2.0 or later')"
+    LICENSE "[GPL-2.0-or-later](https://github.com/CGX-GROUP/librttopo/blob/master/COPYING 'GNU General Public License v2.0 or later')"
     )
   set(nameSpace NAMESPACE ${XP_NAMESPACE}::)
 elseif(NOT DEFINED CMAKE_INSTALL_CMAKEDIR)
