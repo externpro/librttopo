@@ -90,21 +90,20 @@ target_include_directories(${lib_name} PUBLIC $<BUILD_INTERFACE:${CMAKE_BINARY_D
   $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/headers>
   $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
   )
-target_link_libraries(${lib_name} PUBLIC xpro::geos_c)
+target_link_libraries(${lib_name} PUBLIC geos::geos_c)
 set_target_properties(${lib_name} PROPERTIES
   PREFIX "" # strip off the "lib" prefix, since it's already libspatialite
   )
 ########################################
 set(targetsFile ${CMAKE_PROJECT_NAME}-targets)
-if(DEFINED XP_NAMESPACE)
-  xpExternPackage(NAMESPACE ${XP_NAMESPACE}
-    TARGETS_FILE ${targetsFile} LIBRARIES ${lib_name}
-    BASE ${CMAKE_PROJECT_NAME}-${CMAKE_PROJECT_VERSION} XPDIFF "auto" DEPS geos
+if(COMMAND xpExternPackage)
+  xpExternPackage(TARGETS_FILE ${targetsFile}
+    LIBRARIES ${lib_name} DEFAULT_TARGETS ${lib_name}
+    BASE ${CMAKE_PROJECT_NAME}-${CMAKE_PROJECT_VERSION} XPDIFF "auto"
     WEB "https://git.osgeo.org/gitea/rttopo/librttopo" UPSTREAM "github.com/CGX-GROUP/librttopo"
     DESC "RT Topology Library exposes an API to create and manage standard topologies using user-provided data stores"
     LICENSE "[GPL-2.0-or-later](https://github.com/CGX-GROUP/librttopo/blob/master/COPYING 'GNU General Public License v2.0 or later')"
     )
-  set(nameSpace NAMESPACE ${XP_NAMESPACE}::)
 elseif(NOT DEFINED CMAKE_INSTALL_CMAKEDIR)
   set(CMAKE_INSTALL_CMAKEDIR ${CMAKE_INSTALL_DATADIR}/cmake)
 endif()
@@ -114,4 +113,4 @@ install(TARGETS ${lib_name} EXPORT ${targetsFile}
   LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
   )
 install(FILES ${headers_srcs} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
-install(EXPORT ${targetsFile} DESTINATION ${CMAKE_INSTALL_CMAKEDIR} ${nameSpace})
+install(EXPORT ${targetsFile} DESTINATION ${CMAKE_INSTALL_CMAKEDIR} NAMESPACE ${CMAKE_PROJECT_NAME}::)
